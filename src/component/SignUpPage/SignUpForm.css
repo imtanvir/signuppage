@@ -1,0 +1,127 @@
+.signUp-section {
+    background-color: rgb(13, 162, 231);
+    background-image: url('./img/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.signUp-form-area {
+    background-image: url('./img/front.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90vw;
+    height: 90vh;
+}
+.signUp-form {
+    display: grid;
+    flex-grow: 6;
+    place-content: center;
+}
+.signUp-form-container {
+    padding: 3em;
+    background-color: #787b8f94;
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    width: 60vw;
+}
+form input {
+    background-color: #b4b4b47a !important;
+    opacity: .7;
+    border: none !important;
+    border-radius: 3px !important;
+}
+form actBtn {
+    color: dodgerblue;
+}
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(255, 255, 255);
+}
+.signUp-section .company-link {
+    margin-top: -3em;
+    margin-left: 2em;
+}.input-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.first2set {
+    display: flex;
+    flex-direction: row;
+}.sec2set {
+    display: flex;
+    flex-direction: row;
+}
+.action-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span.divider{
+    position: relative;
+}
+span.divider::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 19em;
+    background: #6b7183;
+    left: -22em;
+    top: 11px;
+}
+span.divider::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 19em;
+    background: #6b7183;
+    right: -22em;
+    top: 11px;
+}
+/* custom media query */
+@media (max-width:767px){
+    .signUp-form {
+        align-items:center ;
+    }
+    .signUp-form-container {
+        width: 80vw;
+    }
+    form {
+        font-size: .9em;
+    }
+}
+@media (max-width: 575px){
+    .signUp-form-area{
+        flex-direction: column !important;
+        align-items: center !important;
+    }.signUp-form-container {
+        padding: 3em !important;
+        width: 80vw;
+    }
+    .logtxt{
+        margin-bottom: .5em !important;
+        font-size: 1.5em;
+    }
+    .signUp-form {
+        /* align-items:flex-start ; */
+    }.signUp-section .company-link {
+        margin-top: -1.5em;
+    }
+}
+
+/* custom media query */
