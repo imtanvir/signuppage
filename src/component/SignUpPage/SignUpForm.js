@@ -11,19 +11,19 @@ const SignUpForm = () => {
                                 <div className="input-container">
                                         <div className="mb-3 w-100">
                                             <label htmlFor="userName" className="form-label text-white">Your Name</label>
-                                            <input type="text" className="form-control" id="userName" placeholder="type your name" />
+                                            <input type="text" className="form-control" id="userName" placeholder="Type your name" />
                                         </div>
                                         <div className="mb-3 w-100">
                                             <label htmlFor="userMail" class="form-label text-white">Email address</label>
                                             <input type="email" className="form-control" id="userMail" placeholder="name@example.com"/>
                                         </div>
                                         <div className="mb-3 w-100">
-                                            <label htmlFor="userMailconf" class="form-label text-white">Confirm email address</label>
-                                            <input type="email" className="form-control" id="userMailconf" placeholder="name@example.com"/>
+                                            <label htmlFor="password" className="form-label text-white">Password</label>
+                                            <input type="password" className="form-control mb-2" id="password" placeholder="ex: wznPvC%@ye" />
                                         </div>
                                         <div className="mb-3 w-100">
-                                            <label htmlFor="password" className="form-label text-white">Password</label>
-                                            <input type="password" className="form-control mb-2" id="password" placeholder="create a strong password" />
+                                            <label htmlFor="conPassword" class="form-label text-white">Confirm password</label>
+                                            <input type="password" className="form-control" id="conPassword" placeholder="Confirm password"/>
                                         </div>
                                 </div>
                                 <div className="action-btns">
